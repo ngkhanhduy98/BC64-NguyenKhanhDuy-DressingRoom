@@ -8,7 +8,6 @@ const showItem = () => {
       let itemArr = data.tabPanes;
       categories.forEach((listItem) => {
         let type = listItem.type;
-        console.log("🤪 ~ categories.forEach ~ type:", type);
         let itemListContent = "";
         itemArr.forEach((item) => {
           if (listItem.type == item.type) {
@@ -26,7 +25,6 @@ const showItem = () => {
             `;
           }
         });
-        console.log("Hello");
         document.getElementById(listItem.type + "-inner").innerHTML =
           itemListContent;
       });
