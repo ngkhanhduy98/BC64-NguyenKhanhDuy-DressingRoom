@@ -9,7 +9,6 @@ const tryIt = (id) => {
       let itemList = data.tabPanes;
       itemList.forEach((item) => {
         if (item.id == targesID) {
-          console.log("hello");
           let content = `<img src="${item.imgSrc_png}" alt="" />`;
           document.getElementById(`show-${item.type}`).innerHTML = content;
         }
